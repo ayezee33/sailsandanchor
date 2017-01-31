@@ -8,21 +8,22 @@ body {
 }
 
 .hero {
-  padding: 200px 0 100px 0;
+  padding: 170px 0 100px 0;
   width: 100%;
 }
 .hero img {
   float: right;
 }
 h1 {
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 55px;
 }
 .lead {
   font-weight: 400;
   margin: 0;
-  line-height: 0;
+  line-height: 1;
 }
 
 .diagnoal-container {
@@ -37,7 +38,7 @@ h1 {
 }
 .diagonal:before {
  	position: absolute;
- 	margin-top: 230px;
+ 	margin-top: 255px;
  	content: '';
  	border-style: solid;
 	border-width: 0 0 5em 100vw;
@@ -74,31 +75,81 @@ h1 {
    }
    .diagonal:before {
    position: absolute;
-   margin-top: 273px;
+   margin-top: 257px;
    content: '';
    border-style: solid;
      border-width: 0 0 5em 100vw;
      border-color: #136FFB transparent transparent #136FFB;
     }
+    .about {
+      margin: 140px 10px 80px;
+    }
+    .contact {
+      padding: 100px 0 50px 0;
  }
-
- @media (max-width: 600px) {
- .hero img {
+ @media (max-width: 1023px ) {
+   .hero {
+     padding: 90px 0 40px 0;
+   }
+   .hero img {
+     width: 100px;
+     float: none;
+   }
+   .hero h1 {
+     font-size: 40px;
+   }
+   .hero .lead {
+     font-size: 24px;
+   }
+   .diagonal:before {
+     margin-top: 225px;
+    }
+    .about {
+      margin: 170px 10px 100px 10px;
+    }
+    .contact {
+      padding: 120px 0 100px 0;
+    }
+ }
+@media (max-width: 900px) {
+  .hero img {
+    width: 70px;
+    float: none;
+  }
+  .hero h1 {
+    font-size: 37px;
+  }
+  .hero .lead {
+    font-size: 22px;
+  }
+  .diagonal:before {
+    margin-top: 188px;
+  }
+}
+@media (max-width: 831px) {
+  .diagonal:before {
+    margin-top: 210px;
+  }
+@media (max-width: 436px) {
+  .hero {
+    padding: 50px 0;
+  }
+  .hero img {
    width: 70px;
    float: none;
- }
- .hero h1 {
-   font-size: 30px;
- }
- .hero .lead {
-   font-size: 22px;
- }
- .diagonal:before {
-	position: absolute;
-	margin-top: 209px;
-	content: '';
-	border-style: solid;
- 	border-width: 0 0 5em 100vw;
- 	border-color: #136FFB transparent transparent #136FFB;
   }
- }
+  .hero h1 {
+   font-size: 30px;
+  }
+  .hero .lead {
+   font-size: 22px;
+  }
+  .diagonal:before {
+    margin-top: 232px;
+  }
+}
+@media (max-width: 245px) {
+  .diagonal:before {
+    display: none;
+  }
+}
