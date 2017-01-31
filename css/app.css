@@ -61,7 +61,7 @@ h1 {
    border-radius: 4px;
    margin: 0 auto;
    font-size: 20px;
-   padding: 10px 20px;
+   width: 50%;
  }
  @media (max-width: 1024px ) {
    .hero img {
