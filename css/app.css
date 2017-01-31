@@ -1,0 +1,104 @@
+body {
+  color: #777;
+  font-size: 20px;
+}
+
+.menu li a {
+  color: #fff;
+}
+
+.hero {
+  padding: 200px 0 100px 0;
+  width: 100%;
+}
+.hero img {
+  float: right;
+}
+h1 {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 55px;
+}
+.lead {
+  font-weight: 400;
+  margin: 0;
+  line-height: 0;
+}
+
+.diagnoal-container {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+.diagonal {
+	color: #fff;
+ 	position: relative;
+ 	background: #136FFB;
+}
+.diagonal:before {
+ 	position: absolute;
+ 	margin-top: 230px;
+ 	content: '';
+ 	border-style: solid;
+	border-width: 0 0 5em 100vw;
+	border-color: #136FFB transparent transparent #136FFB;
+ }
+
+.about {
+  margin: 200px 0 100px 0;
+ }
+ .contact {
+   padding: 200px 0 100px 0;
+   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),rgba(0,0,0,0.55) url('../img/sails.jpg') no-repeat center;
+   background-size: cover;
+   color: white;
+ }
+ .button-outline {
+   display: block;
+   border: 1px solid #fff;
+   background: none;
+   border-radius: 4px;
+   margin: 0 auto;
+   font-size: 20px;
+ }
+ @media (max-width: 1024px ) {
+   .hero img {
+     width: 120px;
+     float: none;
+   }
+   .hero h1 {
+     font-size: 40px;
+   }
+   .hero .lead {
+     font-size: 32px;
+   }
+   .diagonal:before {
+   position: absolute;
+   margin-top: 273px;
+   content: '';
+   border-style: solid;
+     border-width: 0 0 5em 100vw;
+     border-color: #136FFB transparent transparent #136FFB;
+    }
+ }
+
+ @media (max-width: 600px) {
+ .hero img {
+   width: 70px;
+   float: none;
+ }
+ .hero h1 {
+   font-size: 30px;
+ }
+ .hero .lead {
+   font-size: 22px;
+ }
+ .diagonal:before {
+	position: absolute;
+	margin-top: 209px;
+	content: '';
+	border-style: solid;
+ 	border-width: 0 0 5em 100vw;
+ 	border-color: #136FFB transparent transparent #136FFB;
+  }
+ }
