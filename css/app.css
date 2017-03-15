@@ -10,6 +10,9 @@ section {
   text-align: center;
   color: #fff;
 }
+.hero h1 {
+  font-weight: 600;
+}
 .styled-line {
   width: 350px;
   height: 10px;
@@ -22,8 +25,7 @@ section {
 .services {
   text-align: center;
 }
-.services h3 {
-}
+
 .services img {
   display: block;
   margin: 0 auto 2em auto;
@@ -43,4 +45,17 @@ section {
  }
 .button-outline:hover {
   background: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero .lead {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+  .services h3 {
+    font-size: 22px;
+  }
 }
