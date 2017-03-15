@@ -1594,7 +1594,7 @@ kbd {
     width: 100%;
     margin-right: 0;
     margin-left: 0; }
-  .button.primary {
+  .button.y {
     background-color: #136FFB;
     color: #fefefe; }
     .button.primary:hover, .button.primary:focus {
